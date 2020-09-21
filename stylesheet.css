@@ -2,11 +2,13 @@ h1 {
     color: aqua;
     text-align: center;
 }
+
 h4 {
     color: aqua;
     text-align: center;
 }
-p{
+
+p {
     color: blue;
     text-align: center;
 }
@@ -32,6 +34,7 @@ li {
     border-radius: 25px;
     align-items: center;
 }
+
 #nameSearch {
     justify-content: center;
     width: 25%; /* Full-width */
@@ -40,6 +43,7 @@ li {
     border: 1px solid #ddd; /* Add a grey border */
     margin-bottom: 12px; /* Add some space below the input */
 }
+
 #numSearch {
     justify-content: center;
     width: 25%; /* Full-width */
@@ -48,10 +52,12 @@ li {
     border: 1px solid #ddd; /* Add a grey border */
     margin-bottom: 12px; /* Add some space below the input */
 }
+
 #nameSearch li a {
     color: blue;
     text-align: right;
 }
+
 #numSearch li c {
     color: blue;
     text-align: right;
