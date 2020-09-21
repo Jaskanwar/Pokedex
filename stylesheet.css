@@ -6,7 +6,7 @@ h4 {
     color: aqua;
     text-align: center;
 }
-p {
+p{
     color: blue;
     text-align: center;
 }
@@ -20,16 +20,40 @@ ul {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
 }
 
 li {
+    color: blue;
     display: flex;
     flex-direction: column;
     background-color: yellow;
     border-radius: 25px;
     align-items: center;
 }
-
+#nameSearch {
+    justify-content: center;
+    width: 25%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+#numSearch {
+    justify-content: center;
+    width: 25%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+#nameSearch li a {
+    color: blue;
+    text-align: right;
+}
+#numSearch li c {
+    color: blue;
+    text-align: right;
+}
 

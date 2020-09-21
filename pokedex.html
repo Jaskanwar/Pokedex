@@ -6,21 +6,24 @@
     <meta name="description" content="Pokedex to learn about various Pokemon.">
     <meta name="author" content="Jaskanwar Randhawa">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="pokemonSearch.js"></script>
 </head>
 
 <body>
 <!-- Place your content here -->
 <h1>POKEDEX</h1>
-<h4>SEARCH THE POKEDEX</h4>
-<ul>
+
+<input type="text" id="nameSearch" onkeyup="nameSearch()" placeholder="Search Pokemon names">
+
+<ul id="myUL">
     <li>
         <img src="images/1.png">
-        <p>
+        <a>
             Bulbasaur
-        </p>
-        <p>
+        </a>
+        <c>
             #001
-        </p>
+        </c>
         <p>
             There is a plant seed on its back right from the day this Pokémon is born.
             The seed slowly grows larger.
@@ -28,57 +31,57 @@
     </li>
     <li>
         <img src="images/2.png">
-        <p>
+        <a>
             Ivysaur
-        </p>
-        <p>
+        </a>
+        <c>
             #002
-        </p>
+        </c>
         <p>
             When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.
         </p>
     </li>
     <li>
         <img src="images/3.png">
-        <p>
+        <a>
             Venusaur
-        </p>
-        <p>
+        </a>
+        <c>
             #003
-        </p>
+        </c>
         <p>
             Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.
         </p>
     </li>
     <li>
         <img src="images/4.png">
-        <p>
+        <a>
             Charmander
-        </p>
-        <p>
+        </a>
+        <c>
             #004
-        </p>
+        </c>
         <p>
             It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.
         </p>
     </li>
     <li>
         <img src="images/5.png">
-        <p>
+        <a>
             Charmeleon
-        </p>
-        <p>
+        </a>
+        <c>
             #005
-        </p>
+        </c>
         <p>
             It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.
         </p>
     </li>
     <li>
         <img src="images/6.png">
-        <p>
+        <a>
             Charizard
-        </p>
+        </a>
         <p>
             #006
         </p>
@@ -88,9 +91,9 @@
     </li>
     <li>
         <img src="images/7.png">
-        <p>
+        <a>
             Squirtle
-        </p>
+        </a>
         <p>
             #007
         </p>
@@ -100,9 +103,9 @@
     </li>
     <li>
         <img src="images/8.png" alt="Wartortle">
-        <p>
+        <a>
             Wartortle
-        </p>
+        </a>
         <p>
             #008
         </p>
@@ -112,9 +115,9 @@
     </li>
     <li>
         <img src="images/9.png">
-        <p>
+        <a>
             Blastoise
-        </p>
+        </a>
         <p>
             #009
         </p>
@@ -124,9 +127,9 @@
     </li>
     <li>
         <img src="images/10.png">
-        <p>
+        <a>
             Caterpie
-        </p>
+        </a>
         <p>
             #010
         </p>
@@ -136,9 +139,9 @@
     </li>
     <li>
         <img src="images/11.png">
-        <p>
+        <a>
             Metapod
-        </p>
+        </a>
         <p>
             #011
         </p>
@@ -149,9 +152,9 @@
     </li>
     <li>
         <img src="images/12.png">
-        <p>
+        <a>
             Butterfree
-        </p>
+        </a>
         <p>
             #012
         </p>
@@ -161,9 +164,9 @@
     </li>
     <li>
         <img src="images/13.png">
-        <p>
+        <a>
             Weedle
-        </p>
+        </a>
         <p>
             #013
         </p>
@@ -173,9 +176,9 @@
     </li>
     <li>
         <img src="images/14.png">
-        <p>
+        <a>
             Kakuna
-        </p>
+        </a>
         <p>
             #014
         </p>
@@ -185,9 +188,9 @@
     </li>
     <li>
         <img src="images/15.png">
-        <p>
+        <a>
             Beedrill
-        </p>
+        </a>
         <p>
             #015
         </p>
@@ -197,9 +200,9 @@
     </li>
     <li>
         <img src="images/16.png">
-        <p>
+        <a>
             Pidgey
-        </p>
+        </a>
         <p>
             #016
         </p>
@@ -209,9 +212,9 @@
     </li>
     <li>
         <img src="images/17.png">
-        <p>
+        <a>
             Pidgeotto
-        </p>
+        </a>
         <p>
             #017
         </p>
@@ -221,9 +224,9 @@
     </li>
     <li>
         <img src="images/18.png">
-        <p>
+        <a>
             Pidgeot
-        </p>
+        </a>
         <p>
             #018
         </p>
@@ -233,9 +236,9 @@
     </li>
     <li>
         <img src="images/19.png">
-        <p>
+        <a>
             Rattata
-        </p>
+        </a>
         <p>
             #019
         </p>
@@ -245,9 +248,9 @@
     </li>
     <li>
         <img src="images/20.png">
-        <p>
+        <a>
             Raticate
-        </p>
+        </a>
         <p>
             #020
         </p>
