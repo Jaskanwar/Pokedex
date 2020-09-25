@@ -1,39 +1,46 @@
-function nameSearch() {
+function getInput(){
+    let input = document.getElementById("nameSearch");
+    nameSearch(input)
+}
+function nameSearch(input) {
     // Declare variables
-    let input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("nameSearch");
+    let filter, ul, li, a, i, txtValue, display=[], count = 0;
     filter = input.value.toUpperCase();
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName("li");
 
-    // Loop through all list items, and hide those who don't match the search query
+    // Loop through all list items, and match search
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            [i].style.display = "none";
+        if (txtValue.toUpperCase().indexOf(filter) > -1 && count <5) {
+            count++;
+            display.push("\n"+li[i].getElementsByTagName("a")[0].innerText + " " + li[i].getElementsByTagName("c")[0].innerText + "\n" +li[i].getElementsByTagName("p")[0].innerText);
         }
     }
+    alert(display)
 }
 
-function numSearch() {
+function getNumInput(){
+    let input = document.getElementById("numSearch");
+    numSearch(input);
+}
+
+function numSearch(input) {
     // Declare variables
-    let input, filter, ul, li, c, i, txtValue;
-    input = document.getElementById("numSearch");
+    let filter, ul, li, c, i, txtValue, display = [], count = 0;
     filter = input.value.toUpperCase()
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName("li");
 
-    // Loop through all list items, and hide those who don't match the search query
+    // Loop through all list items, and match search
     for (i = 0; i < li.length; i++) {
         c = li[i].getElementsByTagName("c")[0];
         txtValue = c.textContent || c.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
+        if (txtValue.toUpperCase().indexOf(filter) > -1 && count < 5) {
+            count++;
+            display.push("\n"+li[i].getElementsByTagName("a")[0].innerText + " " + li[i].getElementsByTagName("c")[0].innerText + "\n" +li[i].getElementsByTagName("p")[0].innerText);
         }
     }
+    alert(display);
 }

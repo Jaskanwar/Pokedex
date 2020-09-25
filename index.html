@@ -12,14 +12,18 @@
 <body>
 <!-- Place your content here -->
 <h1>POKEDEX</h1>
-
-<input type="number" min="0" max="20" id="numSearch" onkeyup="numSearch()" placeholder="Search Pokemon numbers">
-<input type="text" id="nameSearch" onkeyup="nameSearch()" placeholder="Search Pokemon names">
-
+<form method="get" onsubmit="getNumInput()">
+    <input type="number" min="0" max="20" id="numSearch" placeholder="Search Pokemon numbers">
+    <input type="submit" value="Search">
+</form>
+<form method="get" onsubmit="getInput()">
+    <input type="text" id="nameSearch" placeholder="Search Pokemon names" maxlength="20">
+    <input type="submit" value="Search">
+</form>
 
 <ul id="myUL">
     <li>
-        <img src="images/1.png">
+        <img src="images/1.png" alt="Bulbasaur">
         <a>
             Bulbasaur
         </a>
@@ -32,7 +36,7 @@
         </p>
     </li>
     <li>
-        <img src="images/2.png">
+        <img src="images/2.png" alt="Ivysaur">
         <a>
             Ivysaur
         </a>
@@ -44,7 +48,7 @@
         </p>
     </li>
     <li>
-        <img src="images/3.png">
+        <img src="images/3.png" alt="Venusaur">
         <a>
             Venusaur
         </a>
@@ -56,7 +60,7 @@
         </p>
     </li>
     <li>
-        <img src="images/4.png">
+        <img src="images/4.png" alt="Charmander">
         <a>
             Charmander
         </a>
@@ -68,7 +72,7 @@
         </p>
     </li>
     <li>
-        <img src="images/5.png">
+        <img src="images/5.png" alt="Charmeleon">
         <a>
             Charmeleon
         </a>
@@ -80,7 +84,7 @@
         </p>
     </li>
     <li>
-        <img src="images/6.png">
+        <img src="images/6.png" alt="Charizard">
         <a>
             Charizard
         </a>
@@ -92,7 +96,7 @@
         </p>
     </li>
     <li>
-        <img src="images/7.png">
+        <img src="images/7.png" alt="Squirtle">
         <a>
             Squirtle
         </a>
@@ -116,7 +120,7 @@
         </p>
     </li>
     <li>
-        <img src="images/9.png">
+        <img src="images/9.png" alt="Blastoise">
         <a>
             Blastoise
         </a>
@@ -128,7 +132,7 @@
         </p>
     </li>
     <li>
-        <img src="images/10.png">
+        <img src="images/10.png" alt="Caterpie">
         <a>
             Caterpie
         </a>
@@ -140,7 +144,7 @@
         </p>
     </li>
     <li>
-        <img src="images/11.png">
+        <img src="images/11.png" alt="Metapod">
         <a>
             Metapod
         </a>
@@ -153,7 +157,7 @@
         </p>
     </li>
     <li>
-        <img src="images/12.png">
+        <img src="images/12.png" alt="Butterfree">
         <a>
             Butterfree
         </a>
@@ -165,7 +169,7 @@
         </p>
     </li>
     <li>
-        <img src="images/13.png">
+        <img src="images/13.png" alt="Weedle">
         <a>
             Weedle
         </a>
@@ -177,7 +181,7 @@
         </p>
     </li>
     <li>
-        <img src="images/14.png">
+        <img src="images/14.png" alt="Kakuna">
         <a>
             Kakuna
         </a>
@@ -189,7 +193,7 @@
         </p>
     </li>
     <li>
-        <img src="images/15.png">
+        <img src="images/15.png" alt="Beedrill">
         <a>
             Beedrill
         </a>
@@ -201,7 +205,7 @@
         </p>
     </li>
     <li>
-        <img src="images/16.png">
+        <img src="images/16.png" alt="Pidgey">
         <a>
             Pidgey
         </a>
@@ -213,7 +217,7 @@
         </p>
     </li>
     <li>
-        <img src="images/17.png">
+        <img src="images/17.png" alt="Pidgeotto">
         <a>
             Pidgeotto
         </a>
@@ -225,7 +229,7 @@
         </p>
     </li>
     <li>
-        <img src="images/18.png">
+        <img src="images/18.png" alt="Pidgeot">
         <a>
             Pidgeot
         </a>
@@ -237,7 +241,7 @@
         </p>
     </li>
     <li>
-        <img src="images/19.png">
+        <img src="images/19.png" alt="Rattata">
         <a>
             Rattata
         </a>
@@ -249,7 +253,7 @@
         </p>
     </li>
     <li>
-        <img src="images/20.png">
+        <img src="images/20.png" alt="Raticate">
         <a>
             Raticate
         </a>
