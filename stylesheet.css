@@ -62,4 +62,12 @@ li {
     color: blue;
     text-align: right;
 }
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
 

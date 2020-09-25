@@ -15,7 +15,9 @@ function nameSearch(input) {
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1 && count <5) {
             count++;
-            display.push("\n"+li[i].getElementsByTagName("a")[0].innerText + " " + li[i].getElementsByTagName("c")[0].innerText + "\n" +li[i].getElementsByTagName("p")[0].innerText);
+            display.push("\n"+li[i].getElementsByTagName("a")[0].innerText
+                + " " + li[i].getElementsByTagName("c")[0].innerText
+                + "\n" +li[i].getElementsByTagName("p")[0].innerText);
         }
     }
     alert(display)
@@ -39,7 +41,9 @@ function numSearch(input) {
         txtValue = c.textContent || c.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1 && count < 5) {
             count++;
-            display.push("\n"+li[i].getElementsByTagName("a")[0].innerText + " " + li[i].getElementsByTagName("c")[0].innerText + "\n" +li[i].getElementsByTagName("p")[0].innerText);
+            display.push("\n"+li[i].getElementsByTagName("a")[0].innerText
+                + " " + li[i].getElementsByTagName("c")[0].innerText
+                + "\n" +li[i].getElementsByTagName("p")[0].innerText);
         }
     }
     alert(display);
