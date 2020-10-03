@@ -16,10 +16,13 @@
     <input type="number" min="0" max="20" id="numSearch" placeholder="Search Pokemon numbers">
     <input type="submit" value="Search">
 </form>
-<form method="get" onsubmit="getInput()">
-    <input type="text" id="nameSearch" placeholder="Search Pokemon names" maxlength="20">
-    <input type="submit" value="Search">
-</form>
+
+<input type="text" id="nameSearch" onkeyup="nameSearch()" placeholder="Search Pokemon names" maxlength="20">
+
+
+<div id="myDiv">
+
+</div>
 
 <ul id="myUL">
     <li>
