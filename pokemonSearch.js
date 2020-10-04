@@ -27,7 +27,7 @@ function nameSearch() {
         txtValue = a.textContent || a.innerText; //gets the text inside the tag
         if (txtValue.toUpperCase().indexOf(filter) > -1 && filter.length >0) { //checks to see if the name inputted matches any in the pokedex and counts to 5
             let listItem = li[i].cloneNode(true);
-            listItem.id = "goon";
+            listItem.id = "searchList";
             newDiv.appendChild(listItem);
         }
     }
@@ -52,7 +52,7 @@ function numSearch() {
         txtValue = c.textContent || c.innerText; //gets the text inside the tag
         if (txtValue.toUpperCase().indexOf(filter) > -1 && filter.length >0) { //checks to see if the name inputted matches any in the pokedex and counts to 5
             let listItem = li[i].cloneNode(true);
-            listItem.id = "goon";
+            listItem.id = "searchList";
             newDiv.appendChild(listItem);
         }
     }
