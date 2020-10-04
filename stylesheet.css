@@ -22,7 +22,7 @@ ul {
 }
 
 li {
-    color: blue;
+    color: darkblue;
     display: flex;
     flex-direction: column;
     background-color: yellow;
@@ -50,14 +50,24 @@ li {
 }
 
 #nameSearch li a {
-    color: blue;
+    color: darkblue;
     text-align: right;
 }
 
 #numSearch li c {
-    color: blue;
+    color: darkblue;
     text-align: right;
 }
+
+#myDiv{
+    padding-bottom: 50px;
+}
+
+#searchList{
+    background-color: darkolivegreen;
+    color: white;
+}
+
 .footer {
     left: 0;
     bottom: 0;
@@ -67,11 +77,4 @@ li {
     text-align: center;
 }
 
-#myDiv{
-    padding-bottom: 50px;
-}
 
-#searchList{
-    background-color: green;
-    color: white;
-}

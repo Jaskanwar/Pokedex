@@ -1,13 +1,3 @@
-function createDiv(){
-    let div1 = document.getElementById("div1");
-    let div2 = document.createElement("div");
-    let ul = document.createElement("ul");
-    ul.id = "myDiv";
-
-    div2.appendChild(ul);
-    div1.appendChild(div2);
-}
-
 function nameSearch() {
     // Declare variables
     let input, filter, ul, li, a, i, txtValue, newDiv;
@@ -27,9 +17,9 @@ function nameSearch() {
         a = li[i].getElementsByTagName("a")[0]; //gets the name elements using the tag assigned for names
         txtValue = a.textContent || a.innerText; //gets the text inside the tag
         if (txtValue.toUpperCase().indexOf(filter) > -1 && filter.length >0) { //checks to see if the name inputted matches any in the pokedex and counts to 5
-            let listItem = li[i].cloneNode(true);
-            listItem.id = "searchList";
-            newDiv.appendChild(listItem);
+            let listItem = li[i].cloneNode(true); //clones the filtered search into new variable
+            listItem.id = "searchList"; //sets the ID of the new variable
+            newDiv.appendChild(listItem);//Creates a new list item in the unordered list
         }
     }
 }
@@ -53,9 +43,19 @@ function numSearch() {
         c = li[i].getElementsByClassName("c")[0]; //gets the name elements using the tag assigned for names
         txtValue = c.textContent || c.innerText; //gets the text inside the tag
         if (txtValue.toUpperCase().indexOf(filter) > -1 && filter.length >0) { //checks to see if the name inputted matches any in the pokedex and counts to 5
-            let listItem = li[i].cloneNode(true);
-            listItem.id = "searchList";
-            newDiv.appendChild(listItem);
+            let listItem = li[i].cloneNode(true); //clones the filtered search into new variable
+            listItem.id = "searchList"; //sets the ID of the new variable
+            newDiv.appendChild(listItem); //Creates a new list item in the unordered list
         }
     }
+}
+
+function createDiv(){
+    let div1 = document.getElementById("div1"); //get empty div
+    let div2 = document.createElement("div"); //creates empty div
+    let ul = document.createElement("ul");//creates unordered list
+    ul.id = "myDiv"; //assigns ID for UL
+
+    div2.appendChild(ul); //sets the ul as a child of the div
+    div1.appendChild(div2);//creates a new empty div child
 }
