@@ -9,21 +9,16 @@
     <script src="pokemonSearch.js"></script>
 </head>
 
-<body>
+<body onload="createDiv()">
 <!-- Place your content here -->
 <h1>POKEDEX</h1>
-<form method="get" onsubmit="getNumInput()">
-    <input type="number" min="0" max="20" id="numSearch" placeholder="Search Pokemon numbers">
-    <input type="submit" value="Search">
-</form>
 
+<input type="number" min="0" max="20" id="numSearch" onkeyup="numSearch()" placeholder="Search Pokemon numbers">
 <input type="text" id="nameSearch" onkeyup="nameSearch()" placeholder="Search Pokemon names" maxlength="20">
 
-
-<div id="myDiv">
+<div id = "div1">
 
 </div>
-
 <ul id="myUL">
     <li>
         <img src="images/1.png" alt="Bulbasaur">

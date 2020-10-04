@@ -53,3 +53,45 @@ function numSearch(input) {
     }
     alert(display);
 }
+
+function searchLetters() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('txt');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+  fill = document.getElementById("search");
+  var remove =[];
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if ((txtValue.toUpperCase().indexOf(filter) > -1)&&(filter.length>0)) {
+      var item = li[i].cloneNode(true);
+      item.id  = "distinct";
+      remove.push(true)
+      fill.appendChild(item);
+
+    } else {
+      remove.push(false);
+    }
+
+  }
+
+}
+
+function remove(){
+  const myNode = document.getElementById("search");
+
+  while (myNode.firstChild) {
+    myNode.removeChild(myNode.lastChild);
+  }
+  searchLetters();
+
+}
+
+    while (newDiv.firstChild) {
+        newDiv.removeChild(newDiv.firstChild)
+    }
+newDiv.append(li[i].getElementsByTagName("a")[0].innerText);
