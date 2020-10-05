@@ -68,6 +68,11 @@ li {
     color: white;
 }
 
+#searchListNum{
+    background-color: darkolivegreen;
+    color: yellow;
+}
+
 .footer {
     left: 0;
     bottom: 0;
